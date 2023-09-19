@@ -11,7 +11,7 @@
     
     <header class="header">
         <div class="image_block">
-        <img class="img_onlinenotes" id="img_on_not" src="onlinenotes.jpg" alt="#" onclick="location.reload(true);">
+        <img class="img_onlinenotes" id="img_on_not" src="onlinenotes.jpg" alt="#" onclick="location.reload(true);" draggable="false">
     </div>
 
     <div class="hamburger-menu">
@@ -24,8 +24,9 @@
             <div class="box_notes">
           <h1 class="you_notes">Ваши заметки</h1>
             </div>
-          <div id="achievements-container">
-            <ul id="achievements-list"></ul>
+          <div id="notes-container">
+            <ul id="notes-list"></ul>
+            <ul id="notes-menu" class="menu__item"></ul>
           </div>
         </ul>
       </div>
@@ -39,9 +40,9 @@
     </main>
 
     <div class="button_class">
-            <button class="button_save">сохранить заметку</button>
+            <button class="button_save" id="save__button">сохранить заметку</button>
         </div>
     
-    <script src="clicker.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
